@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eunjuinstagram">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EunjuInstagram">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+
+                <!-- 앱을 시작할 때 로그인이 먼저 시작 되도록 inte nt filter 이동 -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- themes.xml 파일의 테마 이름을 적용 -->
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
